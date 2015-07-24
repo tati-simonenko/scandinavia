@@ -1,0 +1,238 @@
+@import "footer--phone.less";
+@import "footer--tablet.less";
+@import "less/mixin.less";
+@import "less/variables.less";
+
+.footer {
+  color: white;
+  background-image: url('http://a.epixx.ru/v4/blocks/footer/footer__bg--1920.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #042e46;
+  background-size: cover;
+  min-height: 350px;
+
+  &__menu {
+    height: 110px;
+    line-height: 110px;
+    overflow: hidden;
+  }
+
+  &__logo {
+    float: left;
+    font-size: 24px;
+    margin-right: 86px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      .footer__sprite-icon(-287px, -5px, 23px, 110px, 138px);
+    }
+  }
+
+  &__nav {
+    float: left;
+
+    ul {
+      list-style: none;
+      overflow: hidden;
+      margin: 0;
+
+      li {
+        float: left;
+        margin-right: 17px;
+        padding-top: 3px;
+
+        &:last-child {margin-right: 0px;}
+
+        a {
+          color: white;
+          font-size: 18px;
+
+          &:hover {
+            opacity: 0.8;
+            transition: @transition-default;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  #js-hidden-panda {
+    display: none;
+    width: 25px;
+    height: 58px;
+    background: url('http://a.epixx.ru/v4/blocks/footer/footer-spritesheet.png') no-repeat;
+    background-position: -875px -33px; 
+ 
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+      transition: @transition-default;
+    }
+  }
+
+  &__content {
+    margin-bottom: 50px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__about {
+    border: 3px solid @gray;
+    padding: 25px 30px 5px 30px;
+    min-width: 280px;
+    max-width: 734px;
+    width: 64%;
+    float: left;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+
+    p {
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+  }
+
+  &__btn { margin-bottom: 20px; }
+}
+
+
+.footer__contacts {
+  padding: 0 0 0 30px;
+  width: 36%;
+  min-width: 320px;
+  float: left;
+
+  &__title {
+    display: block;
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 26px;
+  }
+
+  span {
+    display: block;
+  }
+
+  &__address {
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+
+    span > span { display: inline-block; min-width: 164px; }
+    label {font-weight: normal;}
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      .footer__sprite-icon(-50px, -50px, 17px, 25px, 3px, 1px);
+    }
+  }
+
+  &__tel {
+    padding-left: 35px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      .footer__sprite-icon(-167px, -50px, 20px, 20px, 3px, 1px);
+    }
+
+    span {
+      padding-right: 26px;
+      font-size: 18px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__social-icons {
+    margin-bottom: 30px;
+
+    &--vkontakte {.footer__sprite-icon(-776px, -50px, 22px, 23px);}
+    &--facebook {.footer__sprite-icon(-410px, -50px, 22px, 23px);}
+    &--instagram {.footer__sprite-icon(-532px, -50px, 22px, 23px);}
+    &--twitter {.footer__sprite-icon(-654px, -50px, 22px, 23px);}
+
+    li {
+      display: inline-block;
+      text-indent: -9999px;
+      margin-right: 14px;
+      font-size: 0px;
+
+      &:last-child {margin:0;}
+
+      a {
+        display: block;
+
+        &:hover {
+          opacity: 0.7;
+          transition: @transition-default;
+        }
+      }
+    }
+  }
+
+  &__info {
+    font-size: 15px;
+
+    a {
+      color: white;
+
+      &:hover {
+        text-decoration: none;
+        opacity: 0.7;
+        transition: @transition-default;
+      }
+
+      span {
+        display: inline-block;
+        border-bottom: 1px solid @gray;
+        height: 18px;
+      }
+    }
+  }
+}
+
+.footer__btn {
+  display: inline-block;
+  border: 1px solid @gray;
+  color: white;
+  border-radius: 3px;
+  padding: 14px 20px;
+  background: none;
+  font-size: 18px;
+  line-height: 16px;
+  outline: none;
+  margin-right: 20px;
+  text-align: center;
+
+  &:last-child {margin-right: 0;}
+
+  &:hover {
+    opacity: 0.7;
+    color: white;
+    text-decoration: none;
+    transition: @transition-default;
+  }
+
+  &--small {
+    padding: 8px;
+    font-size: 15px;
+    line-height: 10px;
+
+    &:hover {
+      opacity: 0.7;
+      transition: @transition-default;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// пункты меню навигации
+- var mainNav = {'Кто мы': 'base.html','Ближайшие курсы': 'index.html', 'Отзывы': 'index.html', 'Журнал': 'index.html', 'Контакты': 'index.html'}
+
+// стандартная шапочка сайта
+header.header
+  .container
+    .site-logo
+      a.site-logo__link(href='/')
+        img.site-logo__image(src='../blocks/header/site-logo__image.svg')
+        img.site-logo__name(src='../blocks/header/site-logo__name.svg')
+
+    // выпадашка
+
+    // навигация
+    nav.main-nav.hidden-xs
+      ul
+        each linkPath, linkName in mainNav
+          li: a(href= linkPath) #{linkName}

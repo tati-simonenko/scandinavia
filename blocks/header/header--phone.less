@@ -1,0 +1,162 @@
+@media (max-width: 767px) {
+.top-header {
+  &__address {
+    display: none;
+  }
+ }
+ .header-phone__link {
+ 	display: none;
+ }
+
+ .main-info {
+  &__logo {
+  	display: none;
+  }
+  &__name {
+    font-size: @big+10px;
+    margin-top: 120px;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-size: @small+1px;
+    line-height: @small+8px;
+    &:after {
+      bottom: -15px;
+      width: 90px;
+    }
+  }
+  &__text {
+    font-size: @small;
+    line-height: @basic+4px;
+    letter-spacing: 0.01em;
+  }
+  &__link {
+    .button-order;
+    font-size: 10px;
+    border-radius: 40px;
+    margin-bottom: 0;
+  }
+ }
+ .main-events__link {
+ 	display: none;
+ }
+ .mobile-menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  &__burger {
+    padding-top: 50px;
+  }
+  &__open {
+    background-color: @turquoise;
+    z-index: 1;
+  }
+ }
+ .mobile-link {
+  &__list{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 49px;
+    padding-top: 50px;
+    background-color: @turquoise;
+    min-height: 420px;
+  }
+  &__item {
+    font-size: @small+2px;
+    background-color: @turquoise;
+    color: @white;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding-left: 50px;
+    text-transform: uppercase;
+    &:hover {
+      background-color: @turquoise-dark;
+      color: @light-yellow;
+      text-decoration: none;
+    }
+    &:active {
+      background-color: @turquoise-dark;
+      color: @light-yellow;
+      text-decoration: none;
+    }
+    &:focus {
+      background-color: @turquoise-dark;
+      color: @light-yellow;
+      text-decoration: none;
+    }
+  }
+ }
+ .mobile-burger {
+  margin-top: 47px;
+  margin-left: 20px;
+  width: 40px;
+  height: 5px;
+  background-color: @white;
+  display: block;
+  position: relative;
+  z-index: 3;
+  &:before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content:" ";
+    width: 40px;
+    height: 5px;
+    background-color: @white;
+    display: block;
+    z-index: 3;
+  }
+  &:after {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    content:" ";
+    width: 40px;
+    height: 5px;
+    background-color: @white;
+    display: block;
+    z-index: 3;
+  }
+ }
+
+
+ /*modal*/
+
+ .emodal {
+  max-width: 100% !important;
+  padding: 10px !important;
+ }
+
+  .emodal input[type=submit] {
+      margin: 50px 23px 0;
+  }
+  
+  .modal-window {
+  &__title {
+    font-size: @medium+5px;
+    margin-bottom: 25px;
+  }
+}
+
+.modal-row {
+  &__row {
+    margin: 12px 23px;    
+  }
+}
+.emodal-close {
+  right: 0 !important;
+}
+
+}
+
+
+@media (max-width: 467px) {
+.header {
+  background-image: url(../img/bg-header--mobile.jpg);
+}
+}

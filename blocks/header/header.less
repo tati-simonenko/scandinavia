@@ -1,0 +1,320 @@
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-color: @gray;
+  background-image: url(../img/bg-header.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+ .top-header {
+  &__address {
+    font-size: @basic;
+    line-height: @basic+8px;
+    color: @white;
+    background-color: transparent;
+    padding-left: 20px;
+  }
+ }
+
+ .header-phone {
+  &__link {
+    color: @white;
+    font-size: @small;
+    margin-bottom: 4px;
+    transition: @transition-default;
+    cursor: pointer;
+    &:hover {
+      .unknown-hover;
+      color: @white;
+      text-decoration: none;
+    }
+  }
+  &__phone {
+    font-size: @big;
+    color: @orange!important;
+    font-weight: bold;
+    
+  }
+ }
+
+ .main-info {
+  &__logo {
+    margin-top: 90px;
+    margin-bottom: 20px;
+  }
+  &__name {
+    font-size: @h1;
+    color: @white;
+  }
+  &__description {
+    color: @white;
+    font-weight: bold;
+    font-size: @big;
+    position: relative;
+    margin-bottom: 50px;
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: @white;
+      bottom: -25px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 200px;
+      height: 3px;
+    }
+  }
+  &__text {
+    font-size: @medium+4px;
+    line-height: @medium+14px;
+    color: @white;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+  }
+  &__link {
+    .button-order;
+    margin-bottom: 70px;
+  }
+ }
+
+.main-events {
+  &__link {
+    padding: 9px 15px;
+    display: inline-block;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: @small+2px;
+    color: @white;
+    background-color: transparent;
+    transition: @transition-default;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    &:hover {
+      background-color: @light-blue;
+      color: @white;
+      text-decoration: none;
+    }
+    &:active {
+      background-color: @light-blue;
+      color: @white;
+      text-decoration: none;
+    }
+    &:focus {
+      background-color: @light-blue;
+      color: @white;
+      text-decoration: none;
+    }
+  }
+  &__icon { 
+    margin-top: 15px;
+    display: block; 
+    margin-bottom: 5px;
+    a {
+      display: inline-block;
+      padding: 5px;
+    }
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.sprite {
+    background-image: url(../img/spritesheet.png);    
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+
+    &.sprite-arrow-down {
+        .stitches-sprite(-5px, -5px, 18px, 11px);
+    }
+
+    &.sprite-arrow-gallery-left {
+        .stitches-sprite(-33px, -5px, 11px, 19px);
+    }
+
+    &.sprite-arrow-gallery-right {
+        .stitches-sprite(-54px, -5px, 11px, 19px);
+    }
+
+    &.sprite-arrow-right {
+        .stitches-sprite(-75px, -5px, 16px, 14px);
+    }
+
+    &.sprite-icon-alco {
+        .stitches-sprite(-101px, -5px, 16px, 18px);
+    }
+
+    &.sprite-icon-calendar-green {
+        .stitches-sprite(-127px, -5px, 33px, 39px);
+    }
+
+    &.sprite-icon-calendar-white {
+        .stitches-sprite(-5px, -54px, 33px, 39px);
+    }
+
+    &.sprite-icon-clean {
+        .stitches-sprite(-48px, -54px, 21px, 24px);
+    }
+
+    &.sprite-icon-clock {
+        .stitches-sprite(-79px, -54px, 73px, 55px);
+    }
+
+    &.sprite-icon-close {
+        .stitches-sprite(-170px, -5px, 16px, 17px);
+    }
+
+    &.sprite-icon-cup {
+        .stitches-sprite(-162px, -54px, 21px, 22px);
+    }
+
+    &.sprite-icon-equipment {
+        .stitches-sprite(-162px, -86px, 19px, 22px);
+    }
+
+    &.sprite-icon-fb {
+        .stitches-sprite(-5px, -117px, 52px, 51px);
+    }
+
+    &.sprite-icon-furniture {
+        .stitches-sprite(-67px, -118px, 25px, 16px);
+    }
+
+    &.sprite-icon-inst {
+        .stitches-sprite(-102px, -117px, 50px, 50px);
+    }
+
+    &.sprite-icon-map {
+      margin-right: 8px;
+        .stitches-sprite(-162px, -118px, 12px, 15px);
+    }
+
+    &.sprite-icon-quote {
+      float: right;
+        .stitches-sprite(-162px, -143px, 21px, 16px);
+    }
+
+    &.sprite-icon-rent {
+        .stitches-sprite(-67px, -169px, 18px, 18px);
+    }
+
+    &.sprite-icon-rub {
+        .stitches-sprite(-196px, -5px, 58px, 60px);
+    }
+
+    &.sprite-icon-rub-text {
+        .stitches-sprite(-193px, -73px, 16px, 16px);
+    }
+
+    &.sprite-icon-vk {
+        .stitches-sprite(-193px, -99px, 52px, 50px);
+    }
+
+    &.sprite-icon-wi-fi {
+        .stitches-sprite(-219px, -73px, 23px, 16px);
+    }
+}
+
+
+.sprite-icons {
+    background-image: url(../img/spritesheet-icons.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-icon-room {
+        .stitches-sprite(-5px, -5px, 19px, 20px);
+        margin-top: 4px;
+    }
+
+    &.sprite-icon-room-wedding {
+        .stitches-sprite(-34px, -5px, 20px, 28px);
+    }
+
+    &.sprite-icon-wedding {
+        .stitches-sprite(-64px, -5px, 23px, 23px);
+    }
+}
+
+
+/*Modal*/
+
+.modal-window {
+  &__title {
+    font-weight: bold;
+    font-size: @big+4px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: @dark;
+  }
+}
+
+.modal-row {
+  &__row {
+    margin: 12px 50px;
+    input {
+      border: 1px solid @border-gray;
+      padding: 9px 16px;
+      margin-bottom: 5px;
+      color: @dark;
+      outline: none;
+      width: 100%;
+      &:active {
+        border: 1px solid @bright-blue;
+      }
+      &:focus {
+        border: 1px solid @bright-blue;
+      }
+    }
+    
+  }
+  &__text {
+    font-size: @medium+2px;
+    color: @text-dark!important;
+    margin-bottom: 5px;
+  }
+}
+
+.emodal {
+  input[type=submit] {
+      box-shadow: none;
+      text-shadow: none;
+      border: none;
+      border-image: none;
+      background-color: @bright-blue;
+      border-radius: 4px;
+      color: @white;
+      text-align: center;
+      display: block;
+      padding: 10px;
+      margin: 50px;
+      margin-bottom: 0;
+      outline: none;
+      box-sizing: border-box;
+      width: 83%;
+    }
+}
+
+.emodal-close {
+  background-image: url(../img/icon-close.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 30% 30%;
+  background-size: 30% 30%;
+  background-position: center center;
+}
+
+.div.wpcf7-response-output {
+  margin-top: 0 !important;
+}
+
+
+
+
+@import "header--phone.less";
+@import "header--tablet.less";

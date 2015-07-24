@@ -1,0 +1,24 @@
+
+@media (max-width: 992px) {
+  .footer__menu .footer__nav { display: block; }
+  footer {
+    &.footer { background-image: url('http://a.epixx.ru/v4/blocks/footer/footer__bg--1024.jpg'); }
+    .footer__about { width: 100%; max-width: none; }
+
+    //- спускаем контакты под описание и прячем заголовок
+    .footer__contacts {
+      padding: 0;
+      width: 100%;
+      &__title { display: none !important;}
+      > div { width: 50%; float: left; }
+      > div:last-child { text-align: right; }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  footer {
+    .container { width: 100%; }
+    .footer__contacts__tel { margin-bottom: 20px; }
+  }
+}

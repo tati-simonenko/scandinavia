@@ -1,0 +1,76 @@
+@media (max-width: 767px) {
+	.event-head {
+		padding-top: 210px;
+		padding-bottom: 30px;
+		background-position: center center;
+		.text-right {
+			text-align: center;
+		}
+		&__title {
+			font-size: @medium+4px;
+			line-height: @medium+8px;
+			margin-bottom: 12px;
+		}
+		&__text {
+			font-size: @small+2px;
+			line-height: @small+7px;
+			margin-bottom: 25px;
+		}
+		&__link {
+			.button-order;
+			font-size: @small+2px;
+			margin-right: 0;
+		}
+		&__tags {
+			display: none;
+		}
+	}
+
+	.event-detail {
+		&__item {
+			margin-bottom: 8px;
+			i {
+
+			}
+			span {
+				font-size: @small+3px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+		&-special__tooltip {
+  			width: 280px;
+		}
+	}
+	.event-info .row { position: relative; }
+	.event-info__detail {
+		margin-top: 150px;
+	}
+	.event-info__hours {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+	}
+
+}
+
+
+@media (max-width: 467px) {
+	.event-item {
+		&__business .event-head {
+			background-image: url(../img/bg-event-item__business-mobile.jpg);
+		}
+		&__celebration .event-head {
+			background-image: url(../img/bg-event-item__celebration-mobile.jpg);
+		}
+		&__wedding .event-head {
+			background-image: url(../img/bg-event-item__wedding-mobile.jpg);
+		}
+		&__families .event-head {
+			background-image: url(../img/bg-event-item__families-mobile.jpg);
+		}
+	}
+}

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="true">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" type="text/css"> </head>
+
+  <body>
+    <!-- пункты меню навигации-->
+    <!-- стандартная шапочка сайта-->
+    <header class="header">
+      <div class="container">
+        <div class="site-logo">
+          <a href="/" class="site-logo__link"><img src="../blocks/header/site-logo__image.svg" class="site-logo__image"><img src="../blocks/header/site-logo__name.svg" class="site-logo__name"></a>
+        </div>
+        <!-- выпадашка-->
+        <!-- навигация-->
+        <nav class="main-nav hidden-xs">
+          <ul>
+            <li><a href="base.html">Кто мы</a></li>
+            <li><a href="index.html">Ближайшие курсы</a></li>
+            <li><a href="index.html">Отзывы</a></li>
+            <li><a href="index.html">Журнал</a></li>
+            <li><a href="index.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Промо-блок курса-->
+    <div class="course-promo text-center">
+      <h1 class="course-promo__heading"> LEVEL UP для веб-дизайнера,<br>который хочет подрасти </h1>
+      <p class="course-promo__descripton"> Единственные курсы Веб-дизайна в Санкт-Петербурге,
+        <br>в которых собраны проектирование, прототипирование,
+        <br>обучение программам Axure и Adobe Photoshop, решение кейсов
+        <br>и возможность создать портфолио в процессе обучения.
+        <br>Вы научитесь делать невозможное.</p>
+      <div class="course-promo__info">
+        <div class="course-info__wrap course-info__dates">
+          <div class="course-info__icon flaticon-calendar146"></div>
+          <div class="course-info__text">
+            <div class="course-text__title">С 26 июня</div>
+            <div class="course-text__subtitle">вт / пт</div>
+          </div>
+        </div>
+        <div class="course-info__wrap course-info__lessons">
+          <div class="course-info__icon flaticon-clock100"></div>
+          <div class="course-info__text">
+            <div class="course-text__title">15 занятий</div>
+            <div class="course-text__subtitle">с 19:00 до 23:00</div>
+          </div>
+        </div>
+        <div class="course-info__wrap course-info__pay">
+          <div class="course-info__icon flaticon-wallets3"></div>
+          <div class="course-info__text">
+            <div class="course-text__title">8000 Р</div>
+            <div class="course-text__subtitle">при оплате до 16 июня</div>
+          </div>
+        </div>
+      </div><a href="#register" class="course-promo__button"> Да, я хочу двигаться дальше</a> </div>
+    <div id="details" class="details-anchor"></div>
+    <div class="details">
+      <div class="container">
+        <h2 class="details__heading text-center">Что внутри курса?</h2>
+        <div class="row details-info">
+          <div class="col-sm-2 col-xs-12"><img src="blocks/details/course-promo__icon--creativity.png" class="details-info__img">
+            <p class="details-info__text">Креативные техники</p>
+          </div>
+          <div class="col-xs-2"> <img src="blocks/details/course-promo__icon--write.png" class="details-info__img">
+            <p class="details-info__text">Микрокопирайтинг и работа с контентом</p>
+          </div>
+          <div class="col-xs-2"> <img src="blocks/details/course-promo__icon--photo.png" class="details-info__img">
+            <p class="details-info__text">Обработка и ретушь фотографий</p>
+          </div>
+          <div class="col-xs-2"> <img src="blocks/details/course-promo__icon--animations.png" class="details-info__img">
+            <p class="details-info__text">Анимации в After Effects</p>
+          </div>
+          <div class="col-xs-2"> <img src="blocks/details/course-promo__icon--create.png" class="details-info__img">
+            <p class="details-info__text">Создание иконок и Adobe Illustrator</p>
+          </div>
+          <div class="col-xs-2"> <img src="blocks/details/course-promo__icon--adaptive.png" class="details-info__img">
+            <p class="details-info__text">Адаптивный дизайн</p>
+          </div>
+        </div>
+        <div class="line-mobile"></div>
+        <div class="row details-list">
+          <div class="col-sm-4 col-xs-12 details-list__column">
+            <h3 class="details-list__heading">Как проходит обучение</h3>
+            <ul>
+              <li class="details-list__list-item">Никакой скучной теории</li>
+              <li class="details-list__list-item">Обратная связь</li>
+              <li class="details-list__list-item">Ничего не забудется</li>
+              <li class="details-list__list-item">Можно прийти снова</li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-xs-12 details-list__column">
+            <h3 class="details-list__heading">Для кого этот курс</h3>
+            <ul>
+              <li class="details-list__list-item">Для тех, кто хочет в студию</li>
+              <li class="details-list__list-item">Кому не хватает системы в дизайне</li>
+              <li class="details-list__list-item">У кого творческий кризис</li>
+              <li class="details-list__list-item">Кто хочет зарабатывать больше</li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-xs-12 details-list__column">
+            <h3 class="details-list__heading">Что вы получите</h3>
+            <ul>
+              <li class="details-list__list-item">Модные навыки</li>
+              <li class="details-list__list-item">Личного наставника</li>
+              <li class="details-list__list-item">Ревью портфолио</li>
+              <li class="details-list__list-item">Неформальные беседы с профи</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="programm">
+      <h2 class="programm__heading text-center">Программа</h2>
+      <div class="programm-day">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="programm-day__image"><img src="blocks/program/programm-day__one.png" class="programm-image"></div>
+            </div>
+            <div class="col-xs-8">
+              <div class="programm-day__info">
+                <h3 class="programm-info__lesson-title"> <span>UX-аналитика</span><span class="programm-info__lesson--teacher-load">Ожидается подтверждение</span></h3>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="programm-info__subtitle">Понятие, методики, разработка концепции. Работа в командах</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="programm-info__teacher"><img src="blocks/program/programm-teacher__tabakov.jpg" class="programm-teacher"></div>
+                    <div class="programm-teacher__description">
+                      <div class="programm-teacher__name">Ярослав Табаков</div>
+                      <div class="programm-teacher__position">Директор по развитию Astra Media Group</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <h4 class="programm-info__do">Что делаем:</h4>
+                    <ul>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-6">
+                    <h4 class="programm-info__do">Как делаем:</h4>
+                    <ul>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="programm-day">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="programm-day__image"><img src="blocks/program/programm-day__one.png" class="programm-image"></div>
+            </div>
+            <div class="col-xs-8">
+              <div class="programm-day__info">
+                <h3 class="programm-info__lesson-title"> <span>UX-аналитика</span><span class="programm-info__lesson--teacher-load">Ожидается подтверждение</span></h3>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="programm-info__subtitle">От интервью до набора требований и прото и прото и прото</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="programm-info__teacher"><img src="blocks/program/programm-teacher__tabakov.jpg" class="programm-teacher"></div>
+                    <div class="programm-teacher__description">
+                      <div class="programm-teacher__name">Андрей Ильин</div>
+                      <div class="programm-teacher__position">Дизайнер</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <h4 class="programm-info__do">Что делаем:</h4>
+                    <ul>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-6">
+                    <h4 class="programm-info__do">Как делаем:</h4>
+                    <ul>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="programm-day">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="programm-day__image"><img src="blocks/program/programm-day__two.png" class="programm-image"></div>
+            </div>
+            <div class="col-xs-8">
+              <div class="programm-day__info">
+                <h3 class="programm-info__lesson-title"><span>UX-аналитика</span><span class="programm-info__lesson--teacher-load">Ожидается подтверждение</span></h3>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <p class="programm-info__subtitle">От интервью до набора требований и прото и прото и прото</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="programm-info__teacher"><img src="blocks/program/programm-teacher__tabakov.jpg" class="programm-teacher"></div>
+                    <div class="programm-teacher__description">
+                      <div class="programm-teacher__name">Андрей Ильин</div>
+                      <div class="programm-teacher__position">Дизайнер</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <h4 class="programm-info__do">Что делаем:</h4>
+                    <ul>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-6">
+                    <h4 class="programm-info__do">Как делаем:</h4>
+                    <ul>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                      <li class="programm-info__list-item">Взаимодействие с заказчиком, интервью</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team">
+      <h2 class="team__heading text-center">Команда курса</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 team-person">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="team-person__img"><img src="blocks/team/team-person__tabakov.jpg" class="team-img__photo">
+                  <div class="team-img__logo-company"><img src=""></div>
+                </div>
+              </div>
+              <div class="col-xs-8">
+                <div class="team-person__name">Ярослав Табаков</div>
+                <div class="team-person__subtitle">Ведет блок по визуализации</div>
+                <div class="team-person__text">Директор по развитию Astra Media Group. Уже 11 лет занимается анализом и проектированием программных решений, проектным и операционным управлением, построением процессов разработки. Является постоянным преподавателем в нашей школе</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 team-person">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="team-person__img"><img src="blocks/team/team-person__kutsenko.jpg" class="team-img__photo">
+                  <div class="team-img__logo-company"><img src=""></div>
+                </div>
+              </div>
+              <div class="col-xs-8">
+                <div class="team-person__name">Александр Куценко</div>
+                <div class="team-person__subtitle">Ведет блок по техническим заданиям и спецификациям, а также UX проектированию</div>
+                <div class="team-person__text">Креативный директор цифрового агентства Aidem</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 team-person">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="team-person__img"><img src="blocks/team/team-person__kushedow.jpg" class="team-img__photo">
+                  <div class="team-img__logo-company"><img src=""></div>
+                </div>
+              </div>
+              <div class="col-xs-8">
+                <div class="team-person__name">Глеб Кушедов</div>
+                <div class="team-person__subtitle">Расскажет про создание прототипов под разные устройства, узнаем особенности подготовки дизайна под адаптивный сайт</div>
+                <div class="team-person__text">Сооснователь и преподаватель нашей школы</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 team-person">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="team-person__img"><img src="blocks/team/team-person__julia.jpg" class="team-img__photo">
+                  <div class="team-img__logo-company"><img src="blocks/team/logo-nimax.png"></div>
+                </div>
+              </div>
+              <div class="col-xs-8">
+                <div class="team-person__name">Юлия Мархадаева</div>
+                <div class="team-person__subtitle">Ведет блок по методам проектирования: User Story, User Experience, Customer Journey</div>
+                <div class="team-person__text">Руководитель отдела разработки Nimax</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <h2 class="faq__heading text-center">Частые вопросы</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-7">
+            <div class="faq-info">
+              <div class="faq-item">
+                <div class="faq-item__question">Что делать, если я пропускаю занятие?</div>
+                <div class="faq-item__answer">Если вы уехали в путешествие, заболели или сдаете сессию, вы всегда можете закончить обучение с другой группой. Если же вы уже закончили обучение, но соскучились по нам или хотите освежить знания, приходите на любое занятие.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-item__question">Есть ли конспекты по курсу?</div>
+                <div class="faq-item__answer">Мы ведем обучение по собственным презентациям, схемам и заданиям. После завершения курса вы всегда можете скачать все презентации, посмотреть все видео, посмотреть архив с заданиям и все вспомнить.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-item__question">Есть ли возможность индивидуального обучения со своим проектом?</div>
+                <div class="faq-item__answer">Если есть сложный проект и нужно обучить нестандартным навыкам, мы скорее всего сможем прокачать разработчиков индивидуально по специальным программам. Пишите Ире.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-5">
+            <div class="faq-curator">
+              <div class="faq-img__wrapper"><img src="blocks/faq/curator__olia.png" class="faq-curator__img"></div>
+              <div class="curator-info">
+                <p class="faq-curator__position">Куратор курса</p>
+                <p class="faq-curator__name">Оля Степанова</p>
+                <p class="faq-curator__phone">8 (953) 158-11-80</p>
+              </div><a target="blank" href="" class="faq-curator__button">Задать вопрос по курсу</a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="process">
+      <div class="container">
+        <h2 class="process__heading text-center">Как проходят занятия</h2>
+        <p class="process__subheading text-center">Мы боремся с социопатией айтишников,
+          <br>придумывая групповые задания, заставляя защищать
+          <br>проекты, обсуждать решения и общаться всей группой онлайн.</p>
+        <div class="process-images">
+          <div class="row">
+            <div class="col-xs-3"><img src="blocks/process/process-img__1.jpg" class="process-images__image-item"></div>
+            <div class="col-xs-3"><img src="blocks/process/process-img__2.jpg" class="process-images__image-item"></div>
+            <div class="col-xs-3"><img src="blocks/process/process-img__3.jpg" class="process-images__image-item"></div>
+            <div class="col-xs-3"><img src="blocks/process/process-img__4.jpg" class="process-images__image-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feedback">
+      <h2 class="feedback__heading text-center">Отзывы</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 feedback-item">
+            <div class="feedback-info">
+              <div class="feedback-item__img"><img src="blocks/feedback/feedback-item__1.png"></div>
+              <div class="feedback-item__name">Васса Коваленко</div>
+            </div>
+            <div class="feedback-item__text">Курсы Epic это действительно очень прекрасное событие в моей жизни. Столько сколько здесь я узнала за месяц — просто невозможно получить где-то ещё. Это не просто курсы, это целый мир. Спасибо, что вдохновили меня.</div>
+          </div>
+          <div class="col-xs-4 feedback-item">
+            <div class="feedback-info">
+              <div class="feedback-item__img"><img src="blocks/feedback/feedback-item__2.png"></div>
+              <div class="feedback-item__name">Елена Акулаева</div>
+            </div>
+            <div class="feedback-item__text">Хочу сказать огромное спасибо организаторам курсов, и всем, кто принимал участие в выращивании из нас начинающих дизайнеров! Желаю, чтобы в будущем ваша популярность росла, ваш проект рос и развивался, становился только лучше и интересней,
+              побольше перспективных новичков, а главное получать удовольствие от результатов своей работы над нами и нашими трудами. Спасибо!</div>
+          </div>
+          <div class="col-xs-4 feedback-item">
+            <div class="feedback-info">
+              <div class="feedback-item__img"><img src="blocks/feedback/feedback-item__3.jpg"></div>
+              <div class="feedback-item__name">Екатерина Андреева</div>
+            </div>
+            <div class="feedback-item__text">Окей, гугл. Я узнала на курсе вещи, которым не учат в университетах. Частный случай – я закончила СПбХПА, коммуникативный дизайн – это профильное образование в сфере интерактивного дизайна и брендинга. В epic skills я узнала: правила написания
+              сильного текста, где искать клиентов, как презентовать портфолио, и что 10 или 15 книг по типографике, которые я прочитала, можно элегантно уместить в формулу «снаружи ≥ внутри». Спасибо, товарищи, в Петрограде вы лучшие.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="register">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8">
+            <p>Много текста о курсе</p>
+          </div>
+          <div class="col-xs-4">
+            <div class="register-form text-center">[leadme course="Design"]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="related-courses">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+            <h3 class="related-course__title">Если вы новичок в веб-дизайне</h3>
+            <a href="http://epixx.ru/learn/web-design/" class="related-course__link"><img src="blocks/related_courses/related_course--design.png" class="related-course__img"></a>
+          </div>
+          <div class="col-xs-6">
+            <div class="related-course__title">Если вам интересны мобильные приложения</div>
+            <a href="http://epixx.ru/learn/mobilushka/" class="related-course__link"><img src="blocks/related_courses/related_course--mobile.png" class="related-course__img"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- футер-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__menu">
+          <div class="footer__logo">Epic Skills</div><span id="js-hidden-panda"></span>
+          <nav class="footer__nav">
+            <ul>
+              <li><a href="base.html">Команда</a></li>
+              <li><a href="index.html">Курсы</a></li>
+              <li><a href="index2.html">Журнал</a></li>
+              <li><a href="index3.html">О нас говорят</a></li>
+              <li><a href="index3.html">Контакты</a></li>
+              <li><a href="index3.html">Блог</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__content">
+          <div class="footer__about">
+            <p> Пожалуй, самый увлекательный способ получить навыки создания сайтов в Санкт-Петербурге. У нас можно получить level-up и открыть в себе способности веб-дизайнера, верстальщика или веб-программиста, собрать портфолио, пройти стажировку и найти
+              работу. </p>
+            <p>Мы сокращаем время обучения за счет свежих технологий, ярких заданий и непередаваемой атмосферы. Давайте знакомиться :)</p><a href="#" class="footer__btn">Почитать про школу</a><a href="#" class="footer__btn">Выбрать курс</a> </div>
+          <aside
+          class="footer__contacts"><span class="footer__contacts__title">Контакты</span>
+            <div>
+              <div class="footer__contacts__address"><span>
+                  <label>Наш офис:&nbsp;</label><span>Чкаловский проспект, 15</span></span><span>
+                  <label>Время работы:&nbsp;</label><span>12:00 - 23:00</span></span>
+              </div>
+              <div class="footer__contacts__tel"><span>8 (911) 232 22 32</span><a href="#" class="footer__btn footer__btn--small">Позвоните мне!</a></div>
+            </div>
+            <div>
+              <ul class="footer__contacts__social-icons">
+                <li><a href="vk.com" target="_blank" class="footer__contacts__social-icons--vkontakte">vkontakte</a></li>
+                <li><a href="facebook.com" target="_blank" class="footer__contacts__social-icons--facebook">facebook</a></li>
+                <li><a href="twitter.com" target="_blank" class="footer__contacts__social-icons--twitter">twitter</a></li>
+                <li><a href="instagram.com" target="_blank" class="footer__contacts__social-icons--instagram">instagram</a></li>
+              </ul>
+              <div class="footer__contacts__info"><span>ООО "МедиаСемантика"</span><a href="#" class="footer__modal-link"><span>Юридическая информация</span></a></div>
+            </div>
+            </aside>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>

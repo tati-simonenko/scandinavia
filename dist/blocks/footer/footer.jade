@@ -1,0 +1,55 @@
+include ./../../jade/variables.jade
+
+// футер
+footer.footer
+  .container
+    .footer__menu
+      .footer__logo Epic Skills
+
+      //- спрятавшаяся панда )
+      span#js-hidden-panda
+
+      nav.footer__nav
+        ul
+          each linkPath, linkName in footerNav
+            li: a(href= linkPath) #{linkName}
+
+    .footer__content
+      .footer__about
+        p
+          | Пожалуй, самый увлекательный способ получить навыки создания сайтов
+          | в Санкт-Петербурге. У нас можно получить level-up и открыть в себе способности
+          | веб-дизайнера, верстальщика или веб-программиста, собрать портфолио, пройти стажировку и найти работу.
+        p
+          | Мы сокращаем время обучения за счет свежих технологий, ярких заданий и непередаваемой атмосферы. Давайте знакомиться :)
+
+        a.footer__btn(href="#") Почитать про школу
+        a.footer__btn(href="#") Выбрать курс
+
+      aside.footer__contacts
+        span.footer__contacts__title Контакты
+
+        div
+          .footer__contacts__address
+            span
+              label Наш офис:&nbsp;
+              span Чкаловский проспект, 15
+            span
+              label Время работы:&nbsp;
+              span 12:00 - 23:00
+
+          .footer__contacts__tel
+            span 8 (911) 232 22 32
+            a.footer__btn.footer__btn--small(href="#")
+              | Позвоните мне!
+
+        div
+          ul.footer__contacts__social-icons
+            each linkPath, linkName in socialIcons
+              li: a(href= linkPath, class= "footer__contacts__social-icons--#{linkName}", target="_blank")
+                | #{linkName}
+
+          .footer__contacts__info
+            span ООО "МедиаСемантика"
+            a.footer__modal-link(href="#")
+              span Юридическая информация

@@ -1,0 +1,100 @@
+@media (max-width: 320px) {
+  footer {
+    .container { width: 320px; padding: 0;}
+
+    .footer__menu {
+       min-width: 305px;
+    }
+
+    .footer__logo { margin-left: 20px; }
+    #js-hidden-panda { margin-right: 20px !important; }
+
+    .footer__about {
+      min-width: 320px;
+      border-left: none;
+      border-right: none;
+    }
+
+    .footer__contacts {
+      padding: 0 20px !important;
+
+      //- удаляем заголовок Время работы
+      &__address span:last-child label { display: none; }
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  footer {
+    &.footer { background-image: url('http://a.epixx.ru/v4/blocks/footer/footer__bg--768.jpg') !important; }
+    .footer__menu {
+      height: inherit;
+      line-height: inherit;
+
+      .footer__logo {
+        height: 58px;
+        line-height: 58px;
+
+        &:after {
+          height: 0px;
+        }
+      }
+
+      //- кардинально меняем навигашку
+      .footer__nav {
+        float: none;
+        display: none;
+        clear: both;
+
+        ul li {
+          margin: 0;
+          padding: 0;
+          float: none;
+          border-top: 1px solid #dedede;
+          // box-shadow: inset 0 0 1px 0 @gray;
+
+          a {
+            display: block;
+            padding: 20px 22px;
+            color: @gray;
+
+            &:hover {
+              color: white;
+              opacity: 1;
+              transition: opacity 0.25s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+
+    //- и вот настало время панды )
+    #js-hidden-panda {
+      display: block !important;
+      float: right;
+    }
+
+    //- растягиваем кнопочки на весь блок
+    .footer__about > .footer__btn {
+      width: 100%;
+      min-width: 224px;
+    }
+
+    //- спускаем соц.иконки под телефон
+    .footer__contacts {
+      > div { width: 100% !important; text-align: left !important; }
+
+      //- фиксируем заголовки Наш офис и Время работы на отдельных строках
+      &__address span label { display: block; }
+    }
+  }
+}
+
+//- это не мое, я не знаю откуда это здесь и зачем
+//- пожалуйста, подпишите или удалите, кто в курсе
+@media (max-width: 500px) {
+    footer .row { margin: 0; }
+    footer.newBlack a.mail { margin-top: 10px; }
+    footer.newBlack .vk { float: none; }
+}
+//- п.с.: Никита

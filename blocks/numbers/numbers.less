@@ -1,0 +1,29 @@
+
+.numbers {
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+
+.numbers__item {
+	display: inline-block;
+	vertical-align: top;
+	width: 18%;
+}
+
+.numbers-item__number {
+	color: @dark;
+	font-size: @h1;
+	font-weight: 500;
+}
+
+.numbers-item__text {
+	color: @dark;
+	font-weight: bold;
+	font-size: @medium+3px;
+	line-height: @medium+10px;
+}
+
+
+@import "numbers--tablet.less";
+@import "numbers--phone.less";
+

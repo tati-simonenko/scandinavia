@@ -1,0 +1,112 @@
+ .button(@c,@size,@type:normal,@border:2px){
+
+	& when (@size = xs) { font-size: 11px; padding: 3px 5px; }
+	& when (@size = s) { font-size: 12px; padding: 4px 7px; }
+	& when (@size = m) { font-size: 15px; padding: 6px 10px; }
+	& when (@size = l) { font-size: 20px; padding: 10px 15px; }
+
+	& when (@type =normal) { background-color: @c; color: #fff;}
+	& when (@type =outline) { background-color: transparent; color: @c; border: @border solid @c;}
+
+	&:hover when (@type = normal){ text-decoration: none; background-color: @c+(-35%); color: #fff;}
+
+	&:hover when (@type = outline){	text-decoration: none;  color: @c+(-25%);  border-color: @c+(-45%);}
+
+	display: inline-block;
+	border-radius: @bdrs;
+	transition: @transition background-color, @transition color, @transition border;
+	vertical-align: top;
+
+}
+
+
+
+.button--shadowed(@size,@color){
+
+	box-shadow: 0 5 0 @size @color;
+
+}
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.open { display: block; }
+
+.heading {
+	position: relative;
+	font-size: @h2;
+	top: -43px;
+	background-color: @white;
+	width: 400px;
+	padding-top: 20px;
+	margin: 0 auto;
+	&:before {
+		content:" ";
+		display: block;
+		position: absolute;
+		width: 0;
+			height: 0;
+		left: -44px;
+		top: 0;
+		border-bottom: 50px solid @white;
+		border-left: 45px solid transparent;
+	}
+	&:after {
+		content:" ";
+		display: block;
+		position: absolute;
+		width: 0;
+			height: 0;
+		right: -44px;
+		top: 0;
+		border-bottom: 50px solid @white;
+		border-right: 45px solid transparent;
+	}
+}
+
+.button-order {
+	color: @white;
+    letter-spacing: 0.02em;
+    display: inline-block;
+    border: 2px solid @white;
+    border-radius: 16px;
+    padding: 9px 50px;
+    text-transform: uppercase;
+    font-size: @medium+4px;
+    transition: @transition-default;
+    cursor: pointer;
+    &:hover {
+      .unknown-hover;
+      color: @white;
+      text-decoration: none;
+    }
+}
+
+
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.small-orange-link {
+	color: @orange;
+		font-size: @small;
+		&:hover {
+			text-decoration: none;
+			color: @orange;
+		}
+}
+
+.unknown-hover {
+	opacity: .8;
+}
+
+.footer__sprite-icon(@x: 0, @y: 0, @width: 0, @height: 0, @left: 0, @top: 0) {
+	background-image: url('http://a.epixx.ru/v4/blocks/footer/footer-spritesheet.png');
+	background-repeat: no-repeat;
+	background-position: @x @y;
+	width: @width;
+	height: @height;
+	left: @left;
+	top: @top;
+}  

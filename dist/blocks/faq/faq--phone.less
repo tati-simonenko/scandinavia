@@ -1,0 +1,32 @@
+@media (max-width: 767px) {
+    .faq .row { margin: 0; }
+    .faq__heading { width: 250px; font-size: @h3; }
+    .faq-info { margin-top: 0; }
+    .faq-item {
+    	&__answer { font-size: @basic; line-height: @basic + 6px; }
+    }
+    .faq-curator { padding: 25px; text-align: left; }
+    .faq-img__wrapper { 
+    	width: 30%;
+    	margin-right: 6%;
+    	display: inline-block;
+    	vertical-align: top;
+    }
+    .curator-info {
+    	display: inline-block;
+    	vertical-align: top;
+    	width: 60%;
+    }
+    .faq-curator {
+    	border-top: 0;
+	    &__position { font-size: @small; }
+	    &__name { font-size: @lead; margin-bottom: 4px; }
+	    &__phone { font-size: @basic; }
+	}
+}
+
+@media (max-width: 320px) {
+    .faq {
+    	&__heading { max-width: 200px; }
+    }
+}

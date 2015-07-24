@@ -1,0 +1,50 @@
+.course-api {
+	background-color: @purple;
+	padding-top: 65px;
+	&__heading {
+		color: @white;
+		font-weight: bold;
+		font-size: @h3+2px;
+		margin-bottom: 10px;
+	}
+	&__subheading {
+		color: @white;
+		font-size: @lead;
+		line-height: @lead+5px;
+		margin-bottom: 50px;
+	}
+	&__img {
+		img { width: 100%; }
+	}
+	&__column-left {
+		text-align: right;
+		margin-top: 50px;
+		.api-info__item {
+			text-align: right;
+			background-position: 99% 50%;
+			padding-right: 35px;
+		}
+	}
+	&__column-right {
+		margin-top: 50px;
+		.api-info__item {
+			padding-left: 35px;
+			background-position: 1% 50%;
+		}
+	}
+	&__img--books {
+		text-align: center;
+		margin-bottom: 65px;
+	}
+}
+
+.api-info {
+	&__item {
+		font-size: @h3;
+		display: inline-block;
+		color: @white;
+		margin-bottom: 20px;
+		background-image: url(../blocks/course-api/course-api__icon-plus.png);
+		background-repeat: no-repeat;
+	}
+}

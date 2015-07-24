@@ -1,0 +1,95 @@
+.programm {
+	&__heading {
+		.heading;
+		top: 11px;
+		background-color: @light-gray;
+		&:before {
+			border-bottom: 50px solid @light-gray;
+		}
+		&:after {
+			border-bottom: 50px solid @light-gray;
+		}
+	}
+}
+
+.programm-day {
+	padding: 88px 0 96px 0;
+}
+
+.programm-day__image {
+
+	text-align: center;
+
+}
+
+.programm-info {
+	&__lesson-title {
+		font-size: @h1;
+		line-height: @lh-h1;
+		margin-bottom: 50px;
+	}
+	&__subtitle {
+		font-size: @lead;
+		padding-right: 20px;
+		margin-bottom: 50px;
+	}
+	&__do {
+		font-size: @h3;
+		font-weight: bold;
+		margin-bottom: 22px;
+	}
+	&__teacher {
+		width: 47px;
+		height: 47px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+	&__list-item {
+		.list-item__orange;
+	}
+	&__lesson--teacher-load {
+		background-color: @white;
+		font-size: @small;
+		font-weight: normal;
+		line-height: @small+2px;
+		float: right;
+		padding: 12px;
+		display: inline-block;
+		border: 2px solid @light-orange;
+		border-radius: 5px;
+		position: relative;
+		top: 27px;
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: -15px;
+			left: 12px;
+			height: 16px;
+			width: 20px;
+			background-repeat: no-repeat;
+			background-image: url(../blocks/program/teacher-load__arrow-down.png);
+		}
+
+	}
+}
+
+.programm-teacher {
+	width: 100%;
+	border-radius: 3px;
+	&__description {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 250px;
+	}
+	&__name {
+		font-weight: bold;
+		font-size: @lead;
+	}
+	&__position {
+		font-size: @basic;
+	}
+}
+
+@import "program--tablet.less";
+@import "program--phone.less";

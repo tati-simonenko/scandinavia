@@ -1,0 +1,51 @@
+.team {
+	color: @white;
+	background-color: @light-blue;
+	background-image: url(../blocks/team/team__bg.png);
+	background-size: cover;
+	&__heading {
+		font-size: @h2;
+	}
+}
+
+.team-person {
+	margin-top: 70px;
+	&__img {
+		width: 166px;
+		height: 166px;
+		position: relative;
+	}
+	&__name {
+		font-size: @medium;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	&__subtitle {
+		font-size: @middle;
+		margin-bottom: 20px;
+	}
+	&__text {
+		font-size: @lead;
+		line-height: @lh-lead;
+		font-style: italic;
+	}
+}
+
+.team-img {
+	&__photo {
+		width: 100%;
+		height: auto;
+		border: 4px solid @white;
+		border-radius: 100%;
+	}
+	&__logo-company {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 70px;
+		height: auto;
+	}
+}
+
+@import "team--tablet.less";
+@import "team--phone.less";
